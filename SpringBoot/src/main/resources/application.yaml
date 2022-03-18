@@ -1,0 +1,39 @@
+#person:
+#  name: feng
+#  age: 3
+#  happy: true
+#  birth: 2022/03/12
+#  map: {"k1": 1,"k2": 2}
+#  hello: feng
+#  list:
+#    - 1
+#    - 2
+#    - 3
+#  dog:
+#    name: ${person.hello:hello}a
+#    age: 3
+#server:
+#  port: 7878
+#spring:
+#  profiles:
+#    active: test
+#
+#
+#---
+#server:
+#  port: 7880
+#spring:
+#  profiles: dev
+#
+#
+#---
+#server:
+#  port: 7881
+#spring:
+#  profiles: test
+spring:
+  mvc:
+    favicon:
+      enable: false
+  message:
+    basename: template/home
